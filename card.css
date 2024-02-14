@@ -1,0 +1,59 @@
+body {
+    background-color: #fae1dd;
+  }
+
+  .card {
+    position: absolute;
+    background-color: #eae2b7;
+    width: 96%;
+    height: 98%;
+    box-shadow: -5px -5px 100px rgba(0,0,0,0.4); 
+  }
+  
+  .card:before {
+    content:"";
+    position: absolute;
+    border:3px solid #003049;
+    border-style: dotted;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    left:12px;
+    top:12px;
+  }
+
+  .text {
+    margin: 28px;
+  }
+  p {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+  }
+  .heart {
+    background-color: #d62828;
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: #d62828;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 15px;
+    top: 0;
+  }
